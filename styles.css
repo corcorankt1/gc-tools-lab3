@@ -1,0 +1,71 @@
+
+
+
+
+
+.jumbotron {
+  text-align: center;
+  background-color: #add8e6;
+}
+.stage {
+  text-align: center;
+  margin: 30px;
+  height: 60px;
+}
+.contact-form {
+  text-align: center;
+  margin-top: 50px;
+}
+.name {
+  display: inline-block;
+}
+.contact-info {
+  display: inline-block;
+}
+.col-md-1 {
+  text-align: center;
+}
+.test {
+  min-width: 10px;
+}
+.selected {
+  background-color: #00f;
+}
+.seat {
+  text-align: center;
+}
+label {
+  margin: 10px;
+}
+button {
+  margin: 5px;
+}
+h3 {
+  text-align: center;
+  background-color:#add8e6 ;
+  font-size: 40px;
+  padding-top: 7px;
+}
+label {
+  background-color: #add8e6;
+  padding-left: 5px;
+  padding-right: 3px;
+}
+.panel {
+  border: solid;
+  height: 100px;
+}
+#reservation {
+  text-align: center;
+  font-size: 20px;
+}
+.reserved {
+  background-color: #f00;
+}
+img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;

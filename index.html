@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Seat Reservation App</title>
+  </head>
+
+  <body>
+
+    <div class='container'>
+      <div class = "row">
+        <div class= "jumbotron">
+
+          <h1 class="greeting"> Welcome To The Grand Circus Theater!</h1>
+
+        </div>
+      </div>
+
+
+      <main>
+        <!-- Stage -->
+        <div class = "row ">
+          <div class="col-md-3"></div>
+          <div class = "col-md-6" "stage">
+            <h3 class="stage"> The Stage </h3>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+
+        <!-- Row 1 -->
+        <div class="row" >
+          <div class="col-xs-3"></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-3"></div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row ">
+          <div class="col-xs-3"></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-3"></div>
+        </div>
+
+
+        <!-- Row 3 -->
+        <div class="row">
+          <div class="col-xs-3"></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-3"></div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="row">
+          <div class="col-xs-3"></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-1 seats"><p class="seat">x</p></div>
+          <div class="col-xs-3"></div>
+        </div>
+
+        <!-- Input Form -->
+        <div class = "row">
+          <form class="col-md-12 contact-form">
+            <p>Please fill out the form for movie selection:</p>
+
+            <label>First Name:</label>
+            <input type="text" name="first" placeholder="First Name" id = "firstName">
+
+            <label>Last Name:</label>
+            <input type="text" name="lastname" placeholder="Last Name" id = "lastName">
+            <br>
+
+
+
+            <label>Email:</label>
+            <input type="text" name="email" placeholder="Email" id = "email">
+
+            <label>Phone Number:</label>
+            <input type="number" name="phonenumber" placeholder="Phone Number" id = "phoneNumber">
+            <br>
+            <input class="gender" type="radio" name="gender" value="male" checked id = "male"> Male<br>
+            <input class="gender" type="radio" name="gender" value="female" id = "female"> Female<br>
+
+            <button type = "button" class = "button"> Submit </button>
+          </form>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <p id = "reservation"></p>
+          </div>
+        </div>
+
+      </main>
+    </div>
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+
+  </body>
+</html>
