@@ -2,8 +2,8 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var csscomb = require('gulp-csscomb');
 var browserSync = require('browser-sync').create();
-
 var stylus = require('gulp-stylus');
+
 gulp.task('styles', function (){
   return gulp.src('styles.styl')
   .pipe(stylus())
@@ -20,13 +20,15 @@ gulp.task('scripts' , function () {
 gulp.task('cleancss', ['styles'], function(){
   return gulp.src('styles.css')
   .pipe(csscomb())
-  .pipe(gulp.dest('./'));
+  .pipe(gulp.dest('./'))
+  .pipe(browserSync.stream());
 });
 
-gulp.task('browser-sync', function(){
+gulp.task('serve', ['cleancss'], function(){
   browserSync.init({
-    server: {
-      baseDir: './'
-    }
+    server: './'
   });
+
+    gulp.watch("*.css", ['stylus']);
+    gulp.watch("*.html").on('change', browserSync.reload);
 });
